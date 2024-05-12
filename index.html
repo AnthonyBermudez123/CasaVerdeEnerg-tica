@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.	“Casa Verde Energética”</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        /* Estilos adicionales */
+        body {
+            background-color: #f7fafc; /* Color de fondo */
+            color: #000; /* Texto negro */
+        }
+
+        .swiper-container {
+            width: 100%;
+            max-width: 800px; /* Ancho máximo del carrusel */
+            margin: 0 auto; /* Centrar el carrusel horizontalmente */
+        }
+        
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">1.	“Casa Verde Energética”</h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Aquí se agregarán las imágenes -->
+                <div class="swiper-slide"><img src="img/concepto4.jpeg" alt="Imagen 4"></div>
+                <div class="swiper-slide"><img src="img/concepto3.jpeg" alt="Imagen 3"></div>
+                <div class="swiper-slide"><img src="img/concepto2.jpeg" alt="Imagen 2"></div>
+                <div class="swiper-slide"><img src="img/concepto1.jpeg" alt="Imagen 1"></div>
+                <!-- Agrega más divs con la clase "swiper-slide" para más imágenes -->
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-6 bg-white shadow-lg rounded-lg">
+                <h2 class="text-xl font-semibold mb-4">Servicios</h2>
+                <ul class="list-disc ml-6">
+                    <li><a href="asesoramiento.html">Asesoramiento en energía solar</a></li>
+                    <li><a href="DiseñodesistemasFotovoltaicos.html">Diseño de sistemas Fotovoltaicos</a></li>
+                    <li><a href="Optimizacióndeconsumoenergético.html">Optimización de consumo energético</a></li>
+                    <li><a href="Evaluacióndeviabilidadeconómica.html">Evaluación de viabilidad económica</a></li>
+                </ul>
+            </div>
+            <div class="p-6 bg-white shadow-lg rounded-lg">
+                <h2 class="text-xl font-semibold mb-4">Contacto en caso de querer consultar instalacion o venta de componentes</h2>
+                <form action="#" method="POST">
+                    <div class="mb-4">
+                        <label for="nombre" class="block text-gray-700 font-semibold mb-2">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 font-semibold mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md">
+                    </div>
+                    <div class="mb-4">
+                        <label for="mensaje" class="block text-gray-700 font-semibold mb-2">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" class="w-full px-3 py-2 border rounded-md"></textarea>
+                    </div>
+                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>
